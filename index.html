@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Lance Wong</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="the_css.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="sidebar.jpg" style="width:100%">
+
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+
+  <a href="#info" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>SUMMARY</p>
+  </a>
+  <a href="#research" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-search w3-xxlarge"></i>
+    <p>TECHNICAL EXPERIENCE</p>
+  </a>
+  <a href="#pop" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>MISC</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#info" class="w3-bar-item w3-button" style="width:25% !important">SUMMARY</a>
+    <a href="#research" class="w3-bar-item w3-button" style="width:25% !important">RESEARCH</a>
+    <a href="#pop" class="w3-bar-item w3-button" style="width:25% !important">POP SCI</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small"></span>Lance D. Wong</h1>
+          	<img src="me.JPG" alt="lance" class="w3-image" width="200">
+			<p>
+          Hi, I'm Lance. Currently, I am a 3rd year student at Columbia University studying math and computer science (AI track).
+          I like photography and lifting.
+    		</p>
+    		<p>
+            <a href='mailto:ldw2125@columbia.edu' target='new'>ldw2125@columbia.edu</a> ;
+            <a href='https://www.linkedin.com/in/lance-wong-7abb05189/' target='new'>LinkedIn</a> ;
+            <a href='https://github.com/ldwong20' target='new'>GitHub</a>
+          	<br>
+          	</p>
+          	
+          	<a href='ResumeLanceWong.pdf' target='new'><button class="w3-button w3-light-grey w3-padding-large w3-section">
+		      <i class="fa fa-download"></i> Professional (Short) Resume
+		    </button></a> 
+
+
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-light-grey w3-padding-64" id="info">
+    <h2 class="w3-text-light-grey">Summary</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am a student with software engineering experience. My work experience includes two summers at AbbVie with several hackathons and side projects.</p>
+
+    <p>At AbbVie, I have worked on full stack web applications, learning/data science projects, and even a VR project in Unity for the AbbVie company Hackathon (HackVie). See resume for more details.</p>
+
+    <p>Prior to AbbVie, I did research at UMass Medical School with Prof. Jillian Richmond on auto immune diseases. See Misc. section for more details.</p>
+
+  
+  <div class="w3-padding-64 w3-content" id="research">
+    <h2 class="w3-text-light-grey">Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <h3 class="w3-text-light-grey">HackVie 2022</h3>
+    <p> Our project focused on turning a standard manufacturing Standard Operating Procedure (SOP) into an interactive and fun VR simulation. </p>
+    <p> Please see our <a href='2_AbbVie_presentation.pptx' target='new'>PowerPoint</a> and <a href='2_AbbVie_video.mp4' target='new'> video demo</a> for more details. </p>
+    <p> Our team did quite well and won both the business case and grand award!</p>
+
+    <h3 class="w3-text-light-grey">Music Motions</h3>
+    <p> Working with <a href='https://www.sevenhills.org/' target='new'>Seven Hills</a>, I collaborated with two other students to develop a face-tracking piano app that allows the user to play, save, and export
+    music files using Android Studio and OpenCV </p>
+    <p> If interested, please see our <a href='https://github.com/Music-Motions' target='new'>GitHub</a>. </p>
+
+    <h3 class="w3-text-light-grey">InStockBot</h3>
+    <p> Inspired by my first Python class in college taught by one of my favorite proffessors, <a href='http://www.cs.columbia.edu/~bauer/' target='new'>Dr. Bauer</a>, and my need to build a PC during the pandemic, I wrote a brief Python script to detect when items were in stock or discounted and email me a qualitative report. </p>
+    <p> Not very good code from when I first started, but it can be seen <a href='https://github.com/ldwong20/InStockBot' target='new'>here</a>. </p>
+    
+  </div>
+
+  <div class="w3-padding-64 w3-content" id="pop">
+    <h2 class="w3-text-light-grey">Miscellaneous</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+      <h3 class="w3-text-light-grey">Biology Research</h3>
+      <p> In highschool, I was (and still am) very interested in biology research. I interned with Brown University professor <a href='https://www.brown.edu/academics/biomed/departments/pathology/content/yow-pin-lim-md-phd
+' target='new'>Dr. Lim</a> to do my first science fair project. My project ended up winning the 2nd place award at regionals and the 4th place award at states. If interested, more details <a href='(2018 Sci Fair Regional )Lance update.pptx' target='new'>here</a>
+      </p>
+
+      <p>  I also interned with <a href='https://profiles.umassmed.edu/display/14739409' target='new'>Dr. Richmond</a> to do research on autoimmune diseases such as lupus and morphea. 
+        I learned over 10 types of lab assays that I would routinely perform on a regular basis along with data analysis and scientific writing skills.  
+        I contributed numerous figures to <a href='https://www.researchgate.net/scientific-contributions/L-Wong-2176444126' target='new'>publications</a>
+        and several articles to our <a href='https://www.umassmed.edu/lupus/blog/?fauthor=Lance_Wong' target='new'>lab page</a>.</p>
+    </div>
+    
+  </div>
+
+    <p>Website powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </div>
+
+
+  </div>
+    
+
+<!-- END PAGE CONTENT -->
+</div>
+
+
+</body>
+</html>
